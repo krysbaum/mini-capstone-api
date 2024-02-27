@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   # get "/phone", controller: "products", action: "phone_method"
   # get "/laptop", controller: "products", action: "laptop_method"
   # get "/headphones", controller: "products", action: "headphones_method"
+
+  # CAN ALSO DO IT THIS WAY:
+  # get "/products" => "products#index"
+  # get "/products/:id" => "products#show"
 end
