@@ -7,4 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  get "/all_products", controller: "products", action: "all_products_method"
+  get "/phone", controller: "products", action: "phone_method"
+  get "/laptop", controller: "products", action: "laptop_method"
+  get "/headphones", controller: "products", action: "headphones_method"
 end
