@@ -58,6 +58,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
 end
 
 group :test do
@@ -65,3 +66,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Allows a Rack compatible front end app to request information from your Rails back end
+gem "rack-cors"
