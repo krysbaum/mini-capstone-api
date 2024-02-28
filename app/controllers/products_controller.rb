@@ -1,26 +1,11 @@
 class ProductsController < ApplicationController
-  def all_products
+  def index
     @products = Product.all
-    render template: "products/index"
+    render :index
   end
 
-  def one_product
+  def show
     @product = Product.find_by(id: params["id"])
-    render template: "products/show"
+    render :show
   end
-
-  # def phone_method
-  #   @product = Product.first
-  #   render template: "products/show"
-  # end
-
-  # def laptop_method
-  #   @product = Product.second
-  #   render template: "products/show"
-  # end
-
-  # def headphones_method
-  #   @product = Product.third
-  #   render template: "products/show"
-  # end
 end
