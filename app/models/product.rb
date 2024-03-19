@@ -28,4 +28,12 @@ class Product < ApplicationRecord
     total = tax + price
     total
   end
+
+  def primary_image
+    if images.length > 0
+      images[0].url
+    else
+      "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg"
+    end
+  end
 end
