@@ -70,3 +70,6 @@ end
 
 # Allows a Rack compatible front end app to request information from your Rails back end
 gem "rack-cors"
+
+# Helps create JSON web tokens
+gem "jwt"
