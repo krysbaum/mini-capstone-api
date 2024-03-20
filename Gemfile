@@ -36,6 +36,9 @@ gem "jbuilder"
 
 gem "bcrypt", "~> 3.1.7"
 
+# Helps create JSON web tokens
+gem "jwt"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -70,6 +73,3 @@ end
 
 # Allows a Rack compatible front end app to request information from your Rails back end
 gem "rack-cors"
-
-# Helps create JSON web tokens
-gem "jwt"
