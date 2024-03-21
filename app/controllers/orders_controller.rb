@@ -1,11 +1,9 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user
+
   def index
-    if current_user
-      @orders = current_user.orders
-      render :index
-    else
-      render json: { message: "You need to be logged in to view your orders." }
-    end
+    @orders = current_user.orders
+    render :index
   end
 
   def create
@@ -31,11 +29,7 @@ class OrdersController < ApplicationController
   end
 
   def show
-    if current_user
-      @order = current_user.orders.find_by(id: params[:id])
-      render :show
-    else
-      render json: { message: "You need to be logged in to view your orders." }
-    end
+    @order = current_user.orders.find_by(id: params[:id])
+    render :show
   end
 end
