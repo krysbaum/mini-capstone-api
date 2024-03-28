@@ -20,3 +20,15 @@ Image.create!(url: "https://thumbs.dreamstime.com/b/futuriatic-transparent-glass
 Image.create!(url: "https://cdn.mos.cms.futurecdn.net/4mfNfwcK83FcRprS2yeMoK-1920-80.jpg.webp", product_id: 2)
 Image.create!(url: "https://cdn.vox-cdn.com/thumbor/7eUJVmyvhCj2rckyiOg_xEFeRrQ=/0x0:2040x1351/1400x1050/filters:focal(1020x675:1021x676)/cdn.vox-cdn.com/uploads/chorus_asset/file/15729086/sony-future-lab-project-n-sxsw-2016-2.0.0.1457894980.jpg", product_id: 3)
 Image.create!(url: "https://www.yankodesign.com/images/design_news/2018/04/transparent_television_layout.jpg", product_id: 4)
+
+Category.create!(name: "Technology")
+Category.create!(name: "Mobile Device")
+Category.create!(name: "Accessory")
+
+CategoryProduct.create!(category_id: 1, product_id: 1)
+CategoryProduct.create!(category_id: 1, product_id: 2)
+CategoryProduct.create!(category_id: 1, product_id: 3)
+CategoryProduct.create!(category_id: 1, product_id: 4)
+CategoryProduct.create!(category_id: 2, product_id: 1)
+CategoryProduct.create!(category_id: 3, product_id: 3)
+CategoryProduct.create!(category_id: 3, product_id: 4)
