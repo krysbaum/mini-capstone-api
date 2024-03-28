@@ -8,6 +8,9 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+User.create!(name: "Krys", email: "krys@example.com", password: "password", admin: true)
+User.create!(name: "Juan", email: "juan@example.com", password: "password", admin: false)
+
 Supplier.create!(name: "L3m0n Inc.", email: "lemons@example.com", phone_number: "888-444-5555 ext: 1")
 Supplier.create!(name: "Ndr!ve Inc.", email: "ndrive@example.com", phone_number: "999-333-2222")
 
