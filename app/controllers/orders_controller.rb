@@ -7,6 +7,7 @@ class OrdersController < ApplicationController
   end
 
   def create
+    cart = CartedProduct.find_by(current_user.carted_products.where(status: "carted"))
     product = Product.find_by(id: params[:product_id])
     price = product.price
     calculated_subtotal = price * params[:quantity].to_i
