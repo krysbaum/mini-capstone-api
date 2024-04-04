@@ -32,6 +32,7 @@ class OrdersController < ApplicationController
 
     carted_products.each do |carted_product|
       carted_product.update(status: "purchased", order_id: @order.id)
+      calculated_tax += carted_product.quantity * carted_product.tax
     end
 
     if @order.valid?
